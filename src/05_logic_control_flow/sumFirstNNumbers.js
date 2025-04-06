@@ -8,8 +8,12 @@
  * If n is negative, your function should return 0.
  **/
 function sumFirstNNumbers(n) {
-    // Your code here
+  if (n <= 0) return 0;
+  let result = n;
+  for (let i = 0; i < n; i++) {
+    result += i;
+  }
+  return result;
 }
-
 
 module.exports = sumFirstNNumbers;
